@@ -1,0 +1,129 @@
+:root {
+  --bg: #f9f6f0;
+  --ink: #2c2a29;
+  --muted: #6b6560;
+  --gold: #dda74f;
+  --line: rgba(44, 42, 41, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--ink);
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: #8a6a2f;
+}
+
+.wrap {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 18vh 1.5rem 4rem;
+}
+
+.mark {
+  margin: 0 0 2.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+}
+
+.rule {
+  width: 2.5rem;
+  height: 1px;
+  margin: 0 0 2rem;
+  background: var(--gold);
+  border: 0;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.lede,
+.contact {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+nav {
+  margin-top: 3rem;
+}
+
+nav a {
+  font-size: 0.95rem;
+}
+
+footer {
+  margin-top: 6rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+.policy h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+}
+
+.policy h2 {
+  margin: 2.5rem 0 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.policy p,
+.policy li {
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.policy ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.policy li + li {
+  margin-top: 0.4rem;
+}
+
+.policy strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.dated {
+  margin: -0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
