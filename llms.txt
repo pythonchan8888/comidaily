@@ -1,0 +1,24 @@
+# comi
+
+> A morning reading for this place, this person, and this day. Made by COMI SDN. BHD.
+
+comi is an iOS app. It reads a person’s birth chart, the character of the day, and a place they are standing in, and holds those together before the day gets loud. The guidance is classical, and it is held lightly. A score is a reading for the morning, not a prediction of what will happen.
+
+You can begin with the day. A home, a gate facing, and a room scan can come later.
+
+## Pages
+
+- [Home](https://comidaily.com/): The product in one page. Person, day, and place.
+- [Privacy](https://comidaily.com/privacy.html): What COMI SDN. BHD. collects, what it does not do, and how to delete an account.
+
+## The three readings
+
+- You: date, time, and city of birth become a chart comi keeps. Each day is read against that chart.
+- Today: a direction to face, a measure of the day’s momentum, and a few words for how to meet it.
+- Places: a home, an office, or a site. Set which way it faces. That facing sits beside the chart and the year.
+
+## Contact
+
+- Email: admin@comidaily.com
+- Company: COMI SDN. BHD.
+- Site: https://comidaily.com/

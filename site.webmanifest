@@ -1,0 +1,21 @@
+{
+  "name": "comi",
+  "short_name": "comi",
+  "description": "A morning reading for this place, this person, and this day.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F1E7",
+  "theme_color": "#F5F1E7",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

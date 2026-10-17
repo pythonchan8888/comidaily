@@ -1,9 +1,9 @@
 :root {
-  --bg: #f9f6f0;
-  --ink: #2c2a29;
-  --muted: #6b6560;
-  --gold: #b8893a;
-  --line: rgba(44, 42, 41, 0.14);
+  --bg: #f5f1e7;
+  --ink: #343633;
+  --muted: #665f58;
+  --wine: #761725;
+  --line: #d2c7bb;
 }
 
 * {
@@ -31,7 +31,7 @@ a {
 }
 
 a:hover {
-  color: #6d5424;
+  color: var(--wine);
 }
 
 .frame {
@@ -81,7 +81,7 @@ h1 {
 
 .eyebrow {
   margin: 0;
-  color: var(--gold);
+  color: var(--wine);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.18em;
@@ -113,7 +113,7 @@ h1 {
 
 .num {
   margin: 0.35rem 0 0;
-  color: var(--gold);
+  color: var(--wine);
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.14em;
