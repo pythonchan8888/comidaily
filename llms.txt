@@ -1,21 +1,35 @@
 # comi
 
-> A morning reading for this place, this person, and this day. Made by COMI SDN. BHD.
+> Today’s Tong Shu for Malaysia and Singapore, then a Day Master and Kua number from a birth date. Made by COMI SDN. BHD.
 
-comi is an iOS app. It reads a person’s birth chart, the character of the day, and a place they are standing in, and holds those together before the day gets loud. The guidance is classical, and it is held lightly. A score is a reading for the morning, not a prediction of what will happen.
+comi is an iOS app and a public page at https://comidaily.com/. The page is the instrument a visitor can check. The phone keeps the personal reading. Classical guidance is held lightly. A score is a morning reading, not a prediction.
 
-You can begin with the day. A home, a gate facing, and a room scan can come later.
+The civil day rolls at midnight, GMT+8. That is the clock for Malaysia and Singapore. On 20 October 2026 the public line is Tuesday, 丁卯, Yin Fire Rabbit, Grasp 执, Cold Dew 寒露. The pillar, the officer, and the solar term are the part a visitor can check. The nine-star number stays in the app. Do not invent one for the page.
 
 ## Pages
 
-- [Home](https://comidaily.com/): The product in one page. Person, day, and place.
-- [Privacy](https://comidaily.com/privacy.html): What COMI SDN. BHD. collects, what it does not do, and how to delete an account.
+- [Home](https://comidaily.com/): Today’s pillar, officer, solar term, suitable and avoid lines, and the next seven officers. A birth date and gender reveal the Day Master and Kua number.
+- [Privacy](https://comidaily.com/privacy.html): What COMI SDN. BHD. collects in the app, what the public page does not send, and how to delete an account.
+- [Machine summary](https://comidaily.com/llms.txt): This file.
 
-## The three readings
+## What the page calculates
 
-- You: date, time, and city of birth become a chart comi keeps. Each day is read against that chart.
-- Today: a direction to face, a measure of the day’s momentum, and a few words for how to meet it.
-- Places: a home, an office, or a site. Set which way it faces. That facing sits beside the chart and the year.
+A birth date and a gender are enough for a true preview. The calculation runs in the browser. Nothing from the form is sent.
+
+A male birth on 15 June 1995 reveals 丁, Yin Fire, Kua 2, and Northeast · Prosperity 生氣. The day slot for that birth shows 丁丑. The hour and the city are left out on purpose. 8:23 PM in Penang is 7:05 PM true solar time, about 78 minutes west of 120°E, and that can change the hour pillar.
+
+Under the preview, today’s score, the lucky colour, and the next 30 days sit locked. The page does not invent a count of Open days. It does not say how many of the next 30 days are Open, Steady, or anything else.
+
+## What each part shows
+
+- Celestial shows today’s 宜 and 忌. Lucky colour, He Tu numbers, and the waking power hours stay on iOS, because they move at midnight for the person’s Day Master.
+- Oracle shows the next seven officers. A personal clash is left for the phone. A day can be Settle for everyone and still clash with a chart.
+- Map is the compass and the LiDAR scan. A browser cannot hold either.
+- Identity is the Penang clock correction, then the useful gods and the eight Kua directions on the finished chart.
+
+## The iOS app
+
+There is no App Store link yet. Get the iOS app, the ticker pill, the unlock link, and the mobile bar all write to admin@comidaily.com for a TestFlight invite. Every `data-app` link is set from the one `APP_HREF` constant in `comidaily/index.html`. Replace that string when a store URL exists. Until then it is `mailto:admin@comidaily.com?subject=comi%20for%20iPhone`.
 
 ## Contact
 

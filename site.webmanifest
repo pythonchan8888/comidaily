@@ -1,8 +1,11 @@
 {
   "name": "comi",
   "short_name": "comi",
-  "description": "A morning reading for this place, this person, and this day.",
+  "description": "Today’s Tong Shu for Malaysia and Singapore, and a Day Master and Kua from a birth date.",
+  "lang": "en",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#F5F1E7",
   "theme_color": "#F5F1E7",
@@ -10,12 +13,20 @@
     {
       "src": "/apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/favicon-32.png",
       "sizes": "32x32",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

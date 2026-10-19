@@ -1,0 +1,554 @@
+body.home {
+  --paper: #f5f1e7;
+  --sand: #e7d9ce;
+  --espresso: #231e1c;
+  --gold: #d4a359;
+  --gold-soft: #e8c98b;
+  --sky: #b5cfe1;
+  --sky-line: #91afc3;
+  --sage: #8fa890;
+  --rose: #c88a88;
+  --stone: #8e857d;
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--paper);
+}
+
+body.home a:hover {
+  color: inherit;
+}
+
+.ticker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 1.25rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.ticker p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+}
+
+.ticker a,
+.wine-btn,
+.gold-btn,
+.smart a {
+  text-decoration: none;
+}
+
+.ticker a,
+.wine-btn {
+  flex: none;
+  border: 1px solid var(--wine);
+  border-radius: 999px;
+  color: var(--wine);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 0.4rem 0.8rem;
+}
+
+.wine-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.55rem 1rem;
+  font-size: 0.95rem;
+}
+
+.topbar,
+.wrap {
+  width: min(1080px, calc(100% - 2.5rem));
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.1rem 0 0.4rem;
+}
+
+.topbar .quiet {
+  color: var(--muted);
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 3rem;
+  align-items: start;
+  padding: 3.5rem 0 4.5rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.9rem;
+  color: var(--wine);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+body.home h1 {
+  max-width: 16ch;
+  margin: 0 0 1.1rem;
+  font-family: "Instrument Serif", "Iowan Old Style", Palatino, "Songti SC", serif;
+  font-size: clamp(2.5rem, 5vw, 3.4rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+.sub {
+  max-width: 38rem;
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.invite {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.card {
+  background: var(--espresso);
+  color: var(--paper);
+  border-radius: 8px;
+  padding: 1.4rem 1.35rem 1.3rem;
+}
+
+.card .eyebrow {
+  color: var(--gold);
+}
+
+.card form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.card label span,
+.card legend {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--stone);
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.card input[type="date"] {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid rgba(212, 163, 89, 0.45);
+  border-radius: 8px;
+  background: #2e2724;
+  color: var(--paper);
+  font: inherit;
+  padding: 0.4rem 0.7rem;
+}
+
+.genders {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.genders label {
+  flex: 1;
+}
+
+.genders input {
+  position: absolute;
+  opacity: 0;
+}
+
+.card .genders span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin: 0;
+  border: 1px solid rgba(212, 163, 89, 0.45);
+  border-radius: 999px;
+  color: var(--paper);
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 0.95rem;
+}
+
+.genders input:checked + span,
+.genders input:focus-visible + span {
+  background: rgba(212, 163, 89, 0.16);
+  border-color: var(--gold);
+}
+
+.gold-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 0.2rem;
+  border: 1px solid rgba(212, 163, 89, 0.45);
+  border-radius: 999px;
+  background: #2e2724;
+  color: var(--paper);
+  padding: 0.7rem 1rem;
+  font: inherit;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  text-align: center;
+  cursor: pointer;
+}
+
+.form-note,
+.fine {
+  margin: 0;
+  color: var(--stone);
+  font-size: 0.82rem;
+}
+
+.result {
+  margin-top: 1.15rem;
+  padding-top: 1rem;
+  border-top: 1px solid #3a3330;
+}
+
+#stem {
+  margin: 0;
+  color: var(--gold);
+  font-family: "Instrument Serif", "Songti SC", serif;
+  font-size: 4rem;
+  line-height: 0.9;
+}
+
+.stem-name {
+  margin: 0.25rem 0 0.9rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+}
+
+.kua-line,
+.dir-line {
+  margin: 0.15rem 0;
+}
+
+.kua-line strong,
+.dir-line {
+  font-family: "Instrument Serif", "Songti SC", serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.locks {
+  list-style: none;
+  margin: 1rem 0 0.8rem;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.locks li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--stone);
+  font-size: 0.85rem;
+}
+
+.veil {
+  color: var(--sky);
+  filter: blur(4px);
+  user-select: none;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.pillar {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1.25rem 1.2rem 1.3rem;
+  min-height: 100%;
+}
+
+.pillar h2 {
+  margin: 0 0 0.8rem;
+  font-family: "Instrument Serif", Palatino, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.day-pillar {
+  margin: 0;
+  font-family: "Instrument Serif", "Songti SC", serif;
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.officer {
+  margin: 0.35rem 0 0.8rem;
+  color: var(--muted);
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.cols h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+
+.cols .yes h3 { color: var(--sage); }
+.cols .no h3 { color: var(--rose); }
+
+.cols p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.colour-lock {
+  margin: 0.9rem 0 0;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.35rem;
+  margin: 0 0 0.9rem;
+  padding: 0;
+  list-style: none;
+}
+
+.week li {
+  background: rgba(231, 217, 206, 0.45);
+  border-radius: 6px;
+  text-align: center;
+  padding: 0.45rem 0.1rem 0.4rem;
+}
+
+.week .num {
+  display: block;
+  font-family: "Instrument Serif", serif;
+  font-size: 1.15rem;
+  color: var(--ink);
+  letter-spacing: 0;
+}
+
+.week .off {
+  display: block;
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
+.week .today {
+  background: var(--sky);
+  outline: 1px solid var(--sky-line);
+}
+
+.luopan {
+  width: 148px;
+  height: 148px;
+  margin: 0.2rem 0 0.9rem;
+  border: 1px solid var(--sky-line);
+  border-radius: 50%;
+  position: relative;
+  background:
+    radial-gradient(circle, transparent 58%, rgba(181, 207, 225, 0.35) 59% 68%, transparent 69%),
+    var(--paper);
+}
+
+.luopan span {
+  position: absolute;
+  color: var(--muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+}
+
+.luopan .n { top: 8px; left: 50%; transform: translateX(-50%); }
+.luopan .e { right: 8px; top: 50%; transform: translateY(-50%); }
+.luopan .s { bottom: 8px; left: 50%; transform: translateX(-50%); }
+.luopan .w { left: 8px; top: 50%; transform: translateY(-50%); }
+
+.needle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2px;
+  height: 46px;
+  background: var(--wine);
+  transform-origin: bottom center;
+  transform: translate(-50%, -100%) rotate(45deg);
+}
+
+.slots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+  margin: 0 0 0.8rem;
+}
+
+.slots div {
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.slots strong {
+  font-family: "Instrument Serif", "Songti SC", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink);
+}
+
+.pull {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2.5rem 0 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.notes h2 {
+  margin: 0 0 0.5rem;
+  font-family: "Instrument Serif", "Songti SC", serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+}
+
+.notes p {
+  margin: 0;
+  color: var(--muted);
+}
+
+body.home footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(1080px, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 1.5rem 0 5.5rem;
+}
+
+body.home footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.smart {
+  display: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 2px;
+}
+
+@media (max-width: 860px) {
+  .split,
+  .pillars,
+  .notes {
+    grid-template-columns: 1fr;
+  }
+
+  .split {
+    gap: 2rem;
+    padding-top: 2.2rem;
+  }
+
+  .smart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+    position: fixed;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    padding: 0.55rem 0.55rem 0.55rem 0.9rem;
+    background: rgba(245, 241, 231, 0.92);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    backdrop-filter: blur(10px);
+  }
+
+  .smart p {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--muted);
+  }
+
+  .smart strong {
+    display: block;
+    color: var(--wine);
+    font-weight: 500;
+    letter-spacing: 0.12em;
+  }
+
+  .smart a {
+    flex: none;
+    background: var(--wine);
+    color: var(--paper);
+    border-radius: 999px;
+    padding: 0.55rem 0.85rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .ticker {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .week {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+}

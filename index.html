@@ -3,36 +3,47 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>comi — A morning reading</title>
-  <meta name="description" content="comi is a morning reading for this place, this person, and this day. Your chart, the day, and the place where you are standing, read together. Made by COMI SDN. BHD.">
+  <title>comi — Today’s Tong Shu</title>
+  <meta name="description" content="Today’s Tong Shu for Malaysia and Singapore, from midnight GMT+8. The day pillar, officer, and solar term are open. A birth date shows your Day Master and Kua in the browser.">
   <link rel="canonical" href="https://comidaily.com/">
-  <meta name="robots" content="index, follow">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable summary">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="author" content="COMI SDN. BHD.">
   <meta name="theme-color" content="#F5F1E7">
   <meta name="color-scheme" content="light">
   <meta name="application-name" content="comi">
+  <meta name="apple-mobile-web-app-title" content="comi">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta property="og:site_name" content="comi">
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="en">
+  <meta property="og:locale" content="en_MY">
+  <meta property="og:locale:alternate" content="en_SG">
   <meta property="og:url" content="https://comidaily.com/">
-  <meta property="og:title" content="This place. This person. This day.">
-  <meta property="og:description" content="A morning reading. Your chart, the character of the day, and the place where you are standing, read together before the day gets loud.">
+  <meta property="og:title" content="A little direction for your day, your calendar, and your home.">
+  <meta property="og:description" content="Today’s Tong Shu is open. A birth date and gender reveal your Day Master and Kua in the browser. The score, the planner, and the compass stay in the comi iOS app.">
   <meta property="og:image" content="https://comidaily.com/og.jpg">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="comi. This place. This person. This day. A morning reading on warm paper, with the ingot on the i.">
+  <meta property="og:image:alt" content="comi, with a gold ingot on the i. This place. This person. This day. A morning reading on warm paper.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="This place. This person. This day.">
-  <meta name="twitter:description" content="A morning reading. Your chart, the character of the day, and the place where you are standing.">
+  <meta name="twitter:title" content="A little direction for your day, your calendar, and your home.">
+  <meta name="twitter:description" content="Today’s Tong Shu is open. A birth date and gender reveal your Day Master and Kua in the browser. The score, the planner, and the compass stay in the iOS app.">
   <meta name="twitter:image" content="https://comidaily.com/og.jpg">
-  <meta name="twitter:image:alt" content="comi. This place. This person. This day.">
+  <meta name="twitter:image:alt" content="comi, with a gold ingot on the i. This place. This person. This day.">
   <link rel="preload" href="fonts/InstrumentSerif-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Inter-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="ingot.png" as="image">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,7 +56,9 @@
         "email": "admin@comidaily.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://comidaily.com/apple-touch-icon.png"
+          "url": "https://comidaily.com/apple-touch-icon.png",
+          "width": 180,
+          "height": 180
         }
       },
       {
@@ -53,83 +66,253 @@
         "@id": "https://comidaily.com/#website",
         "url": "https://comidaily.com/",
         "name": "comi",
-        "description": "A morning reading for this place, this person, and this day.",
+        "description": "Today’s Tong Shu for Malaysia and Singapore, and a Day Master and Kua number from a birth date.",
         "publisher": { "@id": "https://comidaily.com/#organization" },
         "inLanguage": "en"
       },
       {
+        "@type": "WebPage",
+        "@id": "https://comidaily.com/#webpage",
+        "url": "https://comidaily.com/",
+        "name": "comi — Today’s Tong Shu",
+        "description": "The day pillar, the officer, and the solar term for Malaysia and Singapore. A birth date and gender reveal the Day Master and Kua number in the browser.",
+        "isPartOf": { "@id": "https://comidaily.com/#website" },
+        "about": { "@id": "https://comidaily.com/#app" },
+        "publisher": { "@id": "https://comidaily.com/#organization" },
+        "inLanguage": "en",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://comidaily.com/og.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "dateModified": "2026-10-20"
+      },
+      {
         "@type": "SoftwareApplication",
+        "@id": "https://comidaily.com/#app",
         "name": "comi",
         "applicationCategory": "LifestyleApplication",
         "operatingSystem": "iOS",
         "url": "https://comidaily.com/",
-        "description": "A morning reading of your birth chart, the character of the day, and a place you are standing in. Classical guidance, held lightly.",
+        "description": "A daily instrument for BaZi, the Tong Shu, and Period 9 flying stars. The public page shows today’s pillar, officer, and solar term. The personal score, the 30-day planner, the compass, and a LiDAR scan are in the iOS app.",
         "publisher": { "@id": "https://comidaily.com/#organization" },
-        "image": "https://comidaily.com/og.jpg"
+        "image": "https://comidaily.com/og.jpg",
+        "countriesSupported": ["MY", "SG"],
+        "featureList": [
+          "Today’s Tong Shu pillar, officer, and solar term for Malaysia and Singapore",
+          "Day Master and Kua number from a birth date and gender, calculated in the browser",
+          "iOS app for the personal score, lucky colour, 30-day planner, compass, and LiDAR scan"
+        ]
       }
     ]
   }
   </script>
 </head>
-<body>
-  <div class="frame">
-    <header class="top">
-      <a class="wordmark" href="/" aria-label="comi">com<span class="stem">ı<img src="ingot.png" alt=""></span></a>
-      <a class="quiet" href="privacy.html">Privacy</a>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div>
-          <p class="eyebrow">A morning reading</p>
-          <h1>This place. This person. This day.</h1>
-          <p class="lede">comi begins from the life you are actually in. Your birth chart, the character of the day, and the place where you are standing, read together before the day gets loud.</p>
-        </div>
-        <aside class="specimen">
-          <p class="specimen-label">A sample morning</p>
-          <div class="ring" role="img" aria-label="Sample reading. 73, Steady. Eighty-five percent the day, fifteen percent the home.">
-            <div class="ring-hole">
-              <span class="score">73</span>
-              <span class="posture">Steady</span>
-            </div>
-          </div>
-          <p class="takeaway">Face northeast. Keep the north quiet.</p>
-          <ul class="shares">
-            <li><span><i class="pip wine" aria-hidden="true"></i>Your day</span><span>85%</span></li>
-            <li><span><i class="pip sky" aria-hidden="true"></i>Your home</span><span>15%</span></li>
-          </ul>
-          <p class="specimen-note">A sample. The morning follows your chart.</p>
-        </aside>
-      </section>
-
-      <section class="aims">
-        <article>
-          <p class="num">01</p>
-          <h2>The person</h2>
-          <p>Your date, time, and city of birth become a chart comi keeps. Each day is read against that chart, so the guidance follows you.</p>
-        </article>
-        <article>
-          <p class="num">02</p>
-          <h2>The day</h2>
-          <p>Each morning offers a direction to face, a measure of the day’s momentum, and a few words for how to meet it. You can begin here. A room scan can come later, when you want the building in the reading.</p>
-        </article>
-        <article>
-          <p class="num">03</p>
-          <h2>The place</h2>
-          <p>A home, an office, or a site you are considering. Set which way it faces. comi sets that facing beside your chart and the year you are in, so the place and the person are held in the same view.</p>
-        </article>
-      </section>
-
-      <section class="close">
-        <p>Classical guidance, <em>held lightly,</em> for the day in front of you.</p>
-        <a class="mail" href="mailto:admin@comidaily.com">admin@comidaily.com</a>
-      </section>
-    </main>
-
-    <footer>
-      <a class="wordmark" href="/" aria-label="comi">com<span class="stem">ı<img src="ingot.png" alt=""></span></a>
-      <p>COMI SDN. BHD.</p>
-    </footer>
+<body class="home">
+  <div class="ticker">
+    <p id="ticker-line">Reading today’s almanac…</p>
+    <a data-app href="#get">Open in iOS ↗</a>
   </div>
+
+  <header class="topbar">
+    <a class="wordmark" href="/" aria-label="comi">com<span class="stem">ı<img src="ingot.png" width="278" height="207" alt=""></span></a>
+    <a class="quiet" href="privacy.html">Privacy</a>
+  </header>
+
+  <main class="wrap">
+    <section class="split">
+      <div>
+        <p class="eyebrow">Classical metaphysics · modern instrument</p>
+        <h1>A little direction for your day, your calendar, and your home.</h1>
+        <p class="sub">comi weaves BaZi (四柱八字), the Tong Shu almanac (通書), and Period 9 flying stars (玄空飛星) into a daily instrument. Today is open here. The personal reading is on iPhone.</p>
+        <p><a class="wine-btn" data-app href="#get">Get the iOS app</a></p>
+        <p class="invite">comi is on TestFlight. This note goes to admin@comidaily.com. On your iPhone, open this page and use the same button.</p>
+      </div>
+
+      <section class="card" aria-labelledby="taste-title">
+        <p class="eyebrow" id="taste-title">Your day stem · 日主</p>
+        <form id="chart-form">
+          <label>
+            <span>Birth date</span>
+            <input id="birth-date" name="date" type="date" required min="1900-01-01" autocomplete="bday">
+          </label>
+          <fieldset class="genders">
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="female" required><span>Female</span></label>
+            <label><input type="radio" name="gender" value="male"><span>Male</span></label>
+          </fieldset>
+          <button class="gold-btn" type="submit">Reveal my element →</button>
+          <p class="form-note" id="form-note">Calculated in this browser. Nothing is sent. The hour and the city stay for the app, because true solar time can move the hour pillar.</p>
+        </form>
+        <div class="result" id="result" hidden>
+          <p id="stem"></p>
+          <p class="stem-name" id="stem-name"></p>
+          <p class="kua-line">Kua <strong id="kua"></strong></p>
+          <p class="dir-line" id="direction"></p>
+          <ul class="locks">
+            <li><span>Today</span><span class="veil">?? / 100</span></li>
+            <li><span>Colour · He Tu</span><span class="veil">— · —</span></li>
+            <li><span>Next 30 days</span><span class="veil">Open · Steady</span></li>
+          </ul>
+          <p class="fine">Your hour and your city decide the rest of the four pillars. Today’s score, the lucky colour, and the planner are read against that chart.</p>
+          <a class="gold-btn" data-app href="#get">Unlock your full reading and 30-day planner in the comi iOS app →</a>
+        </div>
+      </section>
+    </section>
+
+    <section class="pillars" aria-label="The four parts of comi">
+      <article class="pillar">
+        <p class="eyebrow">C · Celestial · 日課</p>
+        <h2>Daily rhythm</h2>
+        <p class="day-pillar" id="celestial-pillar">—</p>
+        <p class="officer" id="celestial-officer"></p>
+        <div class="cols">
+          <div class="yes">
+            <h3>宜 Suitable</h3>
+            <p id="suitable"></p>
+          </div>
+          <div class="no">
+            <h3>忌 Avoid</h3>
+            <p id="avoid"></p>
+          </div>
+        </div>
+        <p class="colour-lock">Lucky colour, He Tu numbers, and the waking power hours move at midnight for your Day Master. The morning note is on iOS.</p>
+      </article>
+
+      <article class="pillar">
+        <p class="eyebrow">O · Oracle · 擇日</p>
+        <h2>Thirty days</h2>
+        <ol class="week" id="week"></ol>
+        <p class="pull">A day can be Settle for everyone and still clash with your chart. The 30-day selector, and the Oracle that explains it, are on iPhone.</p>
+      </article>
+
+      <article class="pillar">
+        <p class="eyebrow">M · Map · 羅盤</p>
+        <h2>Home</h2>
+        <div class="luopan" aria-hidden="true">
+          <span class="n">N</span>
+          <span class="e">E</span>
+          <span class="s">S</span>
+          <span class="w">W</span>
+          <i class="needle"></i>
+        </div>
+        <p class="pull">The iPhone compass faces a balcony or a gate. A LiDAR scan scores the room. A browser cannot hold either.</p>
+      </article>
+
+      <article class="pillar">
+        <p class="eyebrow">I · Identity · 四柱</p>
+        <h2>The chart</h2>
+        <div class="slots" aria-hidden="true">
+          <div>Year<strong>—</strong></div>
+          <div>Month<strong>—</strong></div>
+          <div>Day<strong id="slot-day">日</strong></div>
+          <div>Hour<strong>—</strong></div>
+        </div>
+        <p class="pull">True solar time corrects the clock. A birth at 8:23 PM in Penang is 7:05 PM solar time, about 78 minutes west of 120°E. That can change the hour pillar. Useful gods and the eight Kua directions follow the finished chart.</p>
+      </article>
+    </section>
+
+    <section class="notes" id="get">
+      <article>
+        <h2>True solar time · 真太陽時</h2>
+        <p>The hour pillar follows the sun at the city, not the number on the clock. Generic charts that skip the longitude can name the wrong hour. comi asks for the city, then makes that correction before it keeps the chart.</p>
+      </article>
+      <article>
+        <h2>Period 9 · 九運</h2>
+        <p>The home stars are set for the current cycle, 2024–2043. A facing you take with the phone is read in that period, beside your Kua directions.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>COMI SDN. BHD.</p>
+    <p><a href="privacy.html">Privacy</a> · <a href="mailto:admin@comidaily.com">admin@comidaily.com</a></p>
+  </footer>
+
+  <div class="smart">
+    <p><strong>comi</strong> Chart, planner, compass</p>
+    <a data-app href="#get">Get the app</a>
+  </div>
+
+  <script type="module">
+    import { dailyAlmanac, gmt8Civil, readChart } from "./reading.js";
+
+    const APP_HREF = "mailto:admin@comidaily.com?subject=comi%20for%20iPhone";
+    document.querySelectorAll("[data-app]").forEach((link) => {
+      link.href = APP_HREF;
+    });
+
+    const ticker = document.querySelector("#ticker-line");
+    const pillar = document.querySelector("#celestial-pillar");
+    const officer = document.querySelector("#celestial-officer");
+    const suitable = document.querySelector("#suitable");
+    const avoid = document.querySelector("#avoid");
+    const week = document.querySelector("#week");
+    const birth = document.querySelector("#birth-date");
+    const slot = document.querySelector("#slot-day");
+
+    function paint(now) {
+      const civil = gmt8Civil(now);
+      const today = dailyAlmanac(civil.year, civil.month, civil.day);
+      const term = today.solarTermEnglish
+        ? `${today.solarTerm} · ${today.solarTermEnglish}`
+        : today.solarTerm;
+      ticker.textContent = `${today.weekday}, ${today.solar} · ${today.pillar} · ${today.polarity} ${today.element} ${today.animal} · ${today.officerChinese} · ${today.officer} · ${term}`;
+      pillar.textContent = today.pillar;
+      officer.textContent = today.officerLine;
+      suitable.textContent = today.suitable.join(", ");
+      avoid.textContent = today.avoid.join(", ");
+      birth.max = `${civil.year}-${String(civil.month).padStart(2, "0")}-${String(civil.day).padStart(2, "0")}`;
+
+      week.replaceChildren();
+      const start = Date.UTC(civil.year, civil.month - 1, civil.day);
+      for (let i = 0; i < 7; i += 1) {
+        const date = new Date(start + i * 86_400_000);
+        const almanac = dailyAlmanac(
+          date.getUTCFullYear(),
+          date.getUTCMonth() + 1,
+          date.getUTCDate(),
+        );
+        const item = document.createElement("li");
+        if (i === 0) item.className = "today";
+        const number = document.createElement("span");
+        number.className = "num";
+        number.textContent = String(date.getUTCDate());
+        const name = document.createElement("span");
+        name.className = "off";
+        name.textContent = almanac.officerChinese;
+        item.append(number, name);
+        item.setAttribute("aria-label", `${almanac.weekday} ${almanac.solar}, ${almanac.officer}`);
+        week.append(item);
+      }
+    }
+
+    paint(new Date());
+
+    document.querySelector("#chart-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const note = document.querySelector("#form-note");
+      const value = birth.value;
+      const gender = new FormData(event.currentTarget).get("gender");
+      if (!value || (gender !== "male" && gender !== "female")) {
+        note.textContent = "Add a birth date and gender.";
+        return;
+      }
+      const [year, month, day] = value.split("-").map(Number);
+      if (year < 1900) {
+        note.textContent = "comi starts from 1900.";
+        return;
+      }
+      const chart = readChart(year, month, day, gender);
+      document.querySelector("#stem").textContent = chart.stem;
+      document.querySelector("#stem-name").textContent = `${chart.polarity} ${chart.element}`;
+      document.querySelector("#kua").textContent = String(chart.kua);
+      document.querySelector("#direction").textContent = `${chart.shengQiSpoken} · Prosperity 生氣`;
+      slot.textContent = chart.stem + chart.branch;
+      document.querySelector("#result").hidden = false;
+      note.textContent = "Calculated in this browser. Nothing is sent. The hour and the city stay for the app, because true solar time can move the hour pillar.";
+    });
+  </script>
 </body>
 </html>
